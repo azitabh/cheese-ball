@@ -1,8 +1,8 @@
 = CheeseBall
 
-This is a simle rails engine that can be added into any rails project and can be used to run sql statements. 
+This is a simle rails engine that can be added into any rails project and can be used to run database statements. 
 
-==Required Steps
+===Required Steps
 Add the following line in your Gemfile
 
 
@@ -12,8 +12,18 @@ And that's all. This will pull the latest code from master and you are ready to 
 
 Cheers!!
 
+===Note
+This is tested on ruby-2.0.0-p0 and Rails 4.0.0 only for mysql database only.
+
 ===TODO
 Write test cases.
-Provide configuration options.(e.g.: max rows matched limit)
+
+Provide configuration options.(e.g.: max rows matched limit).
+
+Test compatibility with other ruby/rails versions.
+
+Add access-control.
+
+
 
 This project rocks and uses MIT-LICENSE.
