@@ -1,7 +1,12 @@
 <h1>Cheese Ball</h1>
+
+<% flash.each do |key, value| %>
+  <%= content_tag(:div, value, :class => "flash #{key}") %>
+  <% end %>
+
 Put all your sql queries in the text box. 
 <form method="post">
-<textarea name="sql" style="width:100%;height:auto;">Enter SQL Queries Here...</textarea>
+<textarea name="sql" style="width:100%;height:auto;" placeholder="Enter SQL Queries Here..."></textarea>
 <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
 <input type="submit" value="Run Sql">
 </form>
