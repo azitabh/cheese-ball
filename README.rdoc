@@ -6,7 +6,7 @@ This is a simle rails engine that can be added into any rails project and can be
 Add the following line in your Gemfile
 
 
-gem "cheese_ball", git: "git://github.com/azitabh/cheese-ball.git"
+gem 'cheese_ball', git: 'git://github.com/azitabh/cheese-ball.git'
 
 And that's all. This will pull the latest code from master and you are ready to go. Just restart your web-server and you will be able to access the url /cheese-ball
 
