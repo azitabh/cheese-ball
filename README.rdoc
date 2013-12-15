@@ -25,5 +25,5 @@ Test compatibility with other ruby/rails versions.
 Add access-control.
 
 
-
+===License
 This project rocks and uses MIT-LICENSE.
