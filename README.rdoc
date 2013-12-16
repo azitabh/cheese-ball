@@ -6,17 +6,29 @@ This is a simle rails engine that can be added into any rails project and can be
 Add the following line in your Gemfile
 
 
-gem 'cheese_ball', git: 'git://github.com/azitabh/cheese-ball.git'
+  gem 'cheese_ball', git: 'git://github.com/azitabh/cheese-ball.git'
 
-And that's all. This will pull the latest code from master and you are ready to go. Just restart your web-server and you will be able to access the url /cheese-ball
+Run the customary <tt>bundle install</tt> command and that's all. This will pull the latest code from master to your
++GEMHOME+ and you are ready to go. Just restart your rails server and you will be able to access the url at 
+<tt>BASE_URL/cheese-ball</tt>.
+
+You can put as much +SQL+ statement in the text-area as is allowed in +POST+. SQL statements will be seperated assuming 
++semicolon+ to be the identifier. All the statements will be run one-by-one.
+
+All the changes will be rolled back in case the execution of one of the statements results in an error. Error will be
+displayed on the return screen.
+
+All the changes will be rolled back in case the total no of matched rows exceeds +100+. This will soon be configurable.
 
 Cheers!!
 
 ===Note
-This is tested on ruby-2.0.0-p0 and Rails 4.0.0 only for mysql database only.
+This is tested on +ruby-2.0.0-p0+ and +Rails-4.0.0+ only for +mysql+ database only.
 
 ===TODO
 Write test cases.
+
+Allow users to choose from identifiers(<tt>e.g.: ;, ===, \n etc</tt>) 
 
 Provide configuration options.(e.g.: max rows matched limit).
 
