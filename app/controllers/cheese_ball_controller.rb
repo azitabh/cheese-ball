@@ -28,6 +28,6 @@ class CheeseBallController < ApplicationController
 
   def parse_sql
     @sqls = []
-    @sqls = params["sql"].split(";") unless params["sql"].blank?
+    @sqls = params["sql"].split(/;[ \r\n]*\n/) unless params["sql"].blank?
   end
 end

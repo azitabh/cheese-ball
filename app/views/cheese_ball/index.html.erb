@@ -6,7 +6,7 @@
 
 Put all your sql queries in the text box. 
 <form method="post">
-<textarea name="sql" style="width:100%;height:auto;" placeholder="Enter SQL Queries Here..."></textarea>
+<textarea name="sql" style="width:100%;min-height:200px;" placeholder="Enter SQL Queries Here..."></textarea>
 <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
 <input type="submit" value="Run Sql">
 </form>
