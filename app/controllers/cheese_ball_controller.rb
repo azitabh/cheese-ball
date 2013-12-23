@@ -12,7 +12,7 @@ class CheeseBallController < ApplicationController
             matched_rows += ActiveRecord::Base.connection.update(sql)
           end
           if matched_rows > 1000
-            flash.now[:alert] = "Rows matched(#{matched_rows}) exceeded max limit(100). Please contact admin."
+            flash.now[:alert] = "Rows matched(#{matched_rows}) exceeded max limit(1000). Please contact admin."
           end
         rescue Exception=>e
           flash.now[:alert] = e.message
